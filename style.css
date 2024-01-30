@@ -1,0 +1,64 @@
+.container{   
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.circle{
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   border-radius: 50% ;
+   
+}
+.anim-1{
+    background-color: rgb(95, 0, 0);
+    margin-left: 75px;
+    animation: animation-1 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes animation-1{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+    100%{
+        transform: translateY(160px);
+    }
+}
+
+.anim-2{
+    background-color: rgb(1, 35, 94);
+    animation: animation-2 2s infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes animation-2{
+    from{
+        transform: translateX(0px) translateY(0px);
+    }
+    to{
+        transform: translate(160px) translateY(160px);
+    }
+}
+.anim-3{
+    background-color: rgb(52, 95, 0);
+    animation: animation-3 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-3{
+    0% {
+        transform: translate(0px,0px);
+    }
+    25% {
+        transform: translate(160px,0px);
+    }
+    75%{
+        transform: translate(0px,160px);
+    }
+    100%{
+        transform: translate(160px,160px);
+    }
+}
